@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Seyffert | Portfolio</title>
+  <style>
+    :root {
+      --scarlet: #cc0033;
+      --black: #000000;
+      --gray: #5f6a72;
+      --light: #f5f5f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--black);
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--scarlet);
+      color: #ffffff;
+      padding: 48px 16px;
+      text-align: center;
+      border-bottom: 6px solid var(--black);
+    }
+    header h1 { margin: 0 0 4px; font-size: 2.4rem; }
+    header p { margin: 0; }
+    nav { background: var(--black); text-align: center; padding: 10px 16px; }
+    nav a { color: #ffffff; text-decoration: none; margin: 0 12px; }
+    nav a:hover { color: var(--scarlet); }
+    main { max-width: 760px; margin: 0 auto; padding: 16px; }
+    section { padding: 24px 0; border-bottom: 1px solid #dddddd; }
+    h2 {
+      color: var(--scarlet);
+      border-left: 6px solid var(--scarlet);
+      padding-left: 10px;
+      margin-top: 0;
+    }
+    .statement { font-size: 1.2rem; }
+    ul.skills { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    ul.skills li {
+      background: var(--light);
+      border: 1px solid var(--scarlet);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+    .project { margin-bottom: 20px; }
+    .project h3 { margin: 0; }
+    .project .meta { color: var(--gray); font-size: 0.9rem; margin: 0 0 6px; }
+    .project p { margin: 0; }
+    a { color: var(--scarlet); }
+    .about { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--scarlet);
+    }
+    .about dl { margin: 0; flex: 1; min-width: 240px; }
+    .about dt { font-weight: bold; color: var(--scarlet); }
+    .about dd { margin: 0 0 8px; }
+    footer { text-align: center; padding: 24px 16px; color: var(--gray); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nathan Seyffert</h1>
+    <p>Finance &amp; Real Estate | Rutgers University, Class of 2028</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#statement">Personal Statement</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="headshot.webp" alt="Headshot of Nathan Seyffert">
+        <dl>
+          <dt>Grade</dt>
+          <dd>Junior, Class of 2028 | GPA 3.62 | Dean's List (Fall 2024, Spring 2025, Fall 2025)</dd>
+          <dt>Major</dt>
+          <dd>Finance, Real Estate Concentration | Economics Minor</dd>
+          <dt>Study Abroad</dt>
+          <dd>London School of Economics, Summer 2026 (Advanced Intermediate Macroeconomics)</dd>
+          <dt>Activities</dt>
+          <dd>Zeta Psi Fraternity, Rutgers Road to Silicon Valley Program, Rutgers Finance Society, Walker &amp; Dunlop CRE Connect Mentee</dd>
+          <dt>Interests</dt>
+          <dd>Boston Sports, Basketball, Traveling, Reading</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="statement">
+      <h2>Personal Statement</h2>
+      <p class="statement">
+        I am a Rutgers finance student concentrating in real estate who pairs
+        hands-on deal sourcing and financial analysis with automation to find
+        and evaluate investment opportunities at scale.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Real Estate Financial Analysis</li>
+        <li>DCF Modeling</li>
+        <li>IRR, Equity Multiple, NOI &amp; Cap Rates</li>
+        <li>Deal Sourcing</li>
+        <li>Workflow Automation (n8n)</li>
+        <li>Google Sheets</li>
+        <li>AI-Driven Outreach</li>
+        <li>Investor Communication</li>
+        <li>Real Estate Salesperson License</li>
+        <li>FINRA SIE License</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Automated Distressed-Property Lead Generation</h3>
+        <p class="meta">Seyffert Acquisition Partners | Founder &amp; Operations Lead | June 2025 – Present</p>
+        <p>
+          Founded a real estate investment operation and built automated outreach
+          and lead generation workflows using Google Sheets, n8n, and AI-driven
+          mailer systems to identify distressed, pre-foreclosure, and probate
+          opportunities at scale.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Giant Crypto Group</h3>
+        <p class="meta">Co-Founder &amp; Payments Strategy Lead | November 2024 – August 2025</p>
+        <p>
+          Developed a cryptocurrency project that used a 1% creator tax to buy
+          back and burn supply, driving scarcity as long-term holders accumulated
+          positions. It grew over 18,000% in one week, generated $20M+ in trading
+          volume, and attracted 10,000+ investors.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Real Estate Investment Underwriting</h3>
+        <p class="meta">Tritower Financial Group | Real Estate Intern | May 2026 – July 2026</p>
+        <p>
+          Analyzed investment opportunities across target asset classes by
+          reviewing offering memorandums and pitch decks, and evaluated
+          discounted cash flow models to assess IRR, equity multiple, net
+          operating income, and cap rates.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Model Valuation Training</h3>
+        <p class="meta">AfterQuery Experts | Investment Analyst | December 2025 – April 2026</p>
+        <p>
+          Selected as an undergraduate investment analyst for a YC-backed AI
+          research company, analyzing financial and real estate datasets to
+          improve model decision making and valuation accuracy.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="mailto:nathanseyffert@gmail.com">nathanseyffert@gmail.com</a>
+  </footer>
+</body>
+</html>
